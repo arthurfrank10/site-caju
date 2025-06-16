@@ -1,0 +1,76 @@
+/* Estilo geral */
+body {
+    background-color: blueviolet;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Títulos */
+h1 {
+    color: white;
+}
+
+/* Parágrafos */
+p {
+    color: greenyellow;
+}
+
+/* Grid de imagens */
+.container {
+    display: grid;
+    grid-template-areas: repeat(5, 1fr); /* 5 colunas */
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo das imagens */
+.imagem {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    transition: transform 0.3s;
+}
+
+.imagem:hover {
+    transform: scale(1.05);
+}
+
+/* Container de texto ou segunda página */
+.container2 {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+/* Caixa de texto */
+.texto {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Botões */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: limegreen;
+}
